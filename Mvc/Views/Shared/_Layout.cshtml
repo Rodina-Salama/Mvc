@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="text-center mt-4">
+        <a href="/Home/Index" class="btn btn-danger">Home</a>
+        <a href="/AboutUs/Index" class="btn btn-dark">AboutUs</a>
+        <a href="/ContactUs/Index" class="btn btn-info">ContactUs</a>
+        <a href="/Privacy/Index" class="btn btn-warning">Privacy</a>
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="fixed-bottom text-center mb-3">Copyright Route</footer>
+</body>
+</html>
